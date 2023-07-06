@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --egyptblue: #1434A4;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+header .title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.start-desc {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+
+.highscores {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.time-left {
+  position: absolute;
+  right: 80px;
+  top: 20px;
+
+}
+
+.countdown {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+
+/* Change button's colours when hovering over */
+
+.start-btn button {
+  border: none;
+  background-color: var(--egyptblue);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  line-height: 10px;
+  margin-top: 20px;
+  padding: 14px 20px;
+  text-align: center;
+  cursor: pointer;
+  top: 250px;
+}
+
+.result-page {
+  display: none;
+}
+
+.result-page .quiz-over {
+  font-size: 40px;
+}
+
+.result-page .buttons button {
+  border: none;
+  background-color: var(--egyptblue);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  line-height: 10px;
+  margin-left: 890px;
+  margin-top: 20px;
+  padding: 14px 20px;
+  text-align: center;
+  cursor: pointer;
+  top: 250px;
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}
