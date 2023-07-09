@@ -7,14 +7,32 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    <button class="clear-hs">Clear Highscores</button>
-    <button class="go-back">Go Back</button>
-
-
-
-
-
+    <h1>High Scores</h1>
+    <ul id="score-list"></ul>
+    <button class="clear-hs" onclick="clearHighscores()">Clear Highscores</button>
+    <button class="go-back" ><a a href="index.html">Go Back</button></a>
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const scoreList = document.getElementById("score-list");
+            const highscores = JSON.parse(localStorage.getItem("highscores"));
+
+            if (highscores && highscores.length > 0) {
+                highscores.forEach(function(score) {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = score.name + " - " + score.score;
+                    scoreList.appendChild(listItem);
+                });
+            }
+        });
+
+        const clearButton = document.querySelector(".clear-hs");
+        clearButton.addEventListener("click", function() {
+            localStorage.removeItem("highscores");
+            const scoreList = document.getElementById("score-list");
+            scoreList.innerHTML = "";
+        });
+    </script>
 </body>
 </html>

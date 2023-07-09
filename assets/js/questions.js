@@ -13,7 +13,7 @@ let questions = [
     {
         numb: 2,
         question: "The condition in an if / else statement is enclosed within _____.",
-        answer: "3. parentheses",
+        answer: "3. parantheses",
         choices: [
             "1. quotes",
             "2. curly brackets",
