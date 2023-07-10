@@ -4,6 +4,7 @@
 
 :root {
   --egyptblue: #1434A4;
+  --hovercolor: #758AD5;
 }
 
 html,
@@ -73,6 +74,10 @@ header .title {
   top: 250px;
 }
 
+.start-btn button:hover {
+ background-color: var(--hovercolor);
+}
+
 .quiz-page .options button {
   border: none;
   background-color: var(--egyptblue);
@@ -86,6 +91,10 @@ header .title {
   text-align: center;
   cursor: pointer;
   top: 250px;
+}
+
+.quiz-page .options button:hover {
+  background-color: var(--hovercolor);
 }
 
 section .question-txt {
@@ -174,6 +183,10 @@ section .options .choice.incorrect button {
 
 }
 
+.result-page .submit-scores #submit-btn:hover {
+  background-color: var(--hovercolor);
+}
+
 .result-page .submit-scores #submit-btn a {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
@@ -206,6 +219,10 @@ ul  {
   margin-right: 20px;
 }
 
+.hs-btns .clear-hs:hover {
+  background-color: var(--hovercolor);
+}
+
 .hs-btns .go-back {
   border: none;
   background-color: var(--egyptblue);
@@ -217,6 +234,10 @@ ul  {
   padding: 14px 20px;
   text-align: center;
   cursor: pointer;
+}
+
+.hs-btns .go-back:hover {
+  background-color: var(--hovercolor);
 }
 
 .hs-btns .go-back a {
