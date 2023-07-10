@@ -129,6 +129,34 @@ section .options .choice.incorrect button {
 
 .result-page .quiz-over {
   font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.result-page .final-score {
+  text-align: center;
+}
+
+.result-page .submit-scores {
+  text-align: center;
+  
+}
+
+.result-page .submit-scores input[type=text] {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid var(--egyptblue);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.result-page .submit-scores input[type=text]::placeholder {
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
 }
 
 .result-page .submit-scores #submit-btn {
@@ -139,15 +167,59 @@ section .options .choice.incorrect button {
   color: hsl(0, 0%, 100%);
   font-size: 20px;
   line-height: 10px;
-  margin-left: 890px;
   margin-top: 20px;
   padding: 14px 20px;
   text-align: center;
   cursor: pointer;
-  top: 250px;
+
 }
 
 .result-page .submit-scores #submit-btn a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+/* Highscores Page */
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+ul  {
+  margin-left: 860px;
+}
+
+.hs-btns .clear-hs {
+  border: none;
+  background-color: var(--egyptblue);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  line-height: 10px;
+  margin-top: 20px;
+  padding: 14px 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 780px;
+  margin-right: 20px;
+}
+
+.hs-btns .go-back {
+  border: none;
+  background-color: var(--egyptblue);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  font-size: 20px;
+  line-height: 10px;
+  margin-top: 20px;
+  padding: 14px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hs-btns .go-back a {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
 }
